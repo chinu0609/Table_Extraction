@@ -120,3 +120,15 @@ We can also use Table Transformer to do the same kind. The process involves conv
         
 
 With this setup, scanned PDFs containing tabular data can be efficiently processed, and structured tables can be extracted and saved as an Excel file. *Although this approach of table transformer is only raw code not implemented in the gui and is only mentioned as this can also be a way*
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+
+---
+
+## Contact
+For any questions or suggestions, feel free to contact on below Contact details:
+- Chinmay Bhosale: chinmayhbhosale02@gmail.com
+- GitHub Profile:
+   - Chinmay Bhosale: https://github.com/chinu0609
