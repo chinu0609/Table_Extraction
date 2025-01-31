@@ -93,4 +93,30 @@ This will launch a web-based interface where users can upload PDFs and view extr
 
 ---
 
+We can also use Table Transformer to do the same kind. The process involves converting scanned PDFs into high-resolution images using `pdf2image`, detecting table structures with Table Transformer, and extracting table regions from the image. The detected tables are then processed using `pytesseract` to extract textual data, which is converted into structured Pandas DataFrames. Finally, the extracted tables are stored in an Excel file for further use.
 
+### Requirements & Installation:
+
+1. Install dependencies:
+    
+    ```bash
+    pip install torch torchvision transformers pdf2image pytesseract numpy pandas opencv-python-headless  
+    ```
+    
+        
+2. Install `poppler` (required for `pdf2image`):
+    - **Windows**: Download from [Poppler](https://github.com/oschwartz10612/poppler-windows/releases) and add it to the system PATH.
+    - **Ubuntu**:
+        
+        ```bash
+        sudo apt install poppler-utils  
+        ```
+        
+    - **MacOS**:
+        
+        ```bash
+        brew install poppler  
+        ```
+        
+
+With this setup, scanned PDFs containing tabular data can be efficiently processed, and structured tables can be extracted and saved as an Excel file. *Although this approach is only raw code not implemented in the gui is only mentioned as this can also be a way*
