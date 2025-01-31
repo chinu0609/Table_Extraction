@@ -3,7 +3,7 @@ import pandas as pd
 from io import BytesIO
 import pdfplumber as pdf
 from img2table.document import PDF
-from no_scanned import get_tables,get_tables_scanned
+from pdf_processing import get_tables,get_tables_scanned
 
 
 
