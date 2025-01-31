@@ -42,4 +42,4 @@ def get_tables_scanned(file):
 if __name__ == "__main__":
     tables = get_tables_scanned(PDF('./stock_market_dataset.pdf'))
     
-
+#Chinmay Hemant Bhosale
