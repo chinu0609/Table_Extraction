@@ -20,7 +20,8 @@ def get_tables(file):
             columns = all_data[0]
 
             df = pd.DataFrame(values)
-            df.columns = pd.Series(df.columns).astype(str)  # Convert to string (to avoid integer column issues)
+            df.columns = pd.Series(columns).astype(str)  # Convert to string (to avoid integer column issues)
+            print(df.columns.duplicated())
             df.columns = [f"{col}_{i}" if df.columns.duplicated()[i] else col for i, col in enumerate(df.columns)]
             tables.append(df)
     return tables
